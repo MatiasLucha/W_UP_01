@@ -31,11 +31,14 @@ $H_A$: The average number of pushups done in 2 minutes by line players is statis
 
 <!--Decide on your methods: use "variable analysis" or other appropriate descriptors. Make sure to choose at least one graphical method and at least one numerical method.!-->
 
-Skill is a categorical variable, 
+position is a categorical variable, 
 pushups is a numerical variable,
 
 we predict pushups based on position, viz.,
 pushups ~ position
+
+so we have numerical ~ categorical 
+load the num ~ cat helper file
 
 # Results
 
@@ -47,9 +50,18 @@ pushups ~ position
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+boxplot(pushups~position,data=mydata)
+```
+The boxplot shows that players in skill positions do more pushups in 2 minutes than line players.
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
 
 ## Inferential Results
 
