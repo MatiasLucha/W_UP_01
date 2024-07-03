@@ -71,8 +71,13 @@ On average line players do about 17 pushups in 2 minutes, while skill players do
 ```{r}
 t.test(pushups~position,data=mydata)
 ```
+We reject the null hypothesis because the p-value is 0.000009421 and the value is less than 0.05.
+
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
+Data from the Gerogetown College Football team, line and skill position players did as many pushups in two minutes as they could. 
+
+The boxplot and t-test showed the skills players did more push-ups than that of line players, with a p-value of 0.00009421. 
